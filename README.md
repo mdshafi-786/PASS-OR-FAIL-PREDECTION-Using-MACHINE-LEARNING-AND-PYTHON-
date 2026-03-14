@@ -177,6 +177,49 @@ Tests verify:
 
 GitHub Actions automatically runs the notebook and tests on every push to `main`. See [`.github/workflows/test.yml`](.github/workflows/test.yml).
 
+## What is Tableau?
+
+**Tableau** is a leading business intelligence (BI) and interactive data visualization platform that enables users to connect to virtually any data source and create rich, shareable dashboards without writing code.
+
+### Key Features
+
+| Feature | Description |
+|---------|-------------|
+| **Drag-and-drop interface** | Build charts, graphs, and maps visually — no SQL or Python required |
+| **Live & extracted connections** | Connect to databases, spreadsheets, cloud services, and more in real time |
+| **Interactive dashboards** | Create multi-chart dashboards with filters, parameters, and drill-downs |
+| **Story Points** | Present data insights as guided, slide-style narratives |
+| **Calculated fields** | Write custom expressions to derive new metrics from existing data |
+| **Sharing & collaboration** | Publish to Tableau Server / Tableau Cloud for team access |
+
+### Tableau vs. Python Visualization Libraries
+
+| Aspect | Tableau | Python (matplotlib / seaborn) |
+|--------|---------|-------------------------------|
+| Coding required | ❌ No | ✅ Yes |
+| Interactivity | ✅ Built-in | ⚠️ Limited (requires Plotly / Streamlit) |
+| Learning curve | Low | Medium – High |
+| Customization | Moderate | Very high |
+| Cost | 💰 Paid (free Public tier) | 🆓 Free & open-source |
+| Best for | Business dashboards, stakeholder reports | Reproducible research, ML pipelines |
+
+### Relevance to This Project
+
+Although this project uses **Python, matplotlib, and seaborn** for all visualizations, Tableau could be used as a complementary tool to:
+
+- Build an **interactive Pass/Fail dashboard** from `student_data.csv` without any code.
+- Create **KPI scorecards** showing pass rates, average study hours, and attendance trends.
+- Share visual insights with non-technical stakeholders (teachers, administrators) via **Tableau Public**.
+
+### Getting Started with Tableau
+
+1. Download **[Tableau Public](https://public.tableau.com/)** (free) or **Tableau Desktop** (trial available).
+2. Connect to `student_data.csv` using *Text File* as the data source.
+3. Drag `FinalMarks` to the Rows shelf and `StudyHours` to the Columns shelf to create your first scatter plot.
+4. Add a calculated field `[FinalMarks] >= 60` to create a Pass/Fail color dimension.
+
+> 💡 **Tip:** Tableau Public lets you publish and embed dashboards for free at [public.tableau.com](https://public.tableau.com/).
+
 ## Future Improvements
 
 - Collect real student data to replace the synthetic dataset
