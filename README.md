@@ -177,6 +177,42 @@ Tests verify:
 
 GitHub Actions automatically runs the notebook and tests on every push to `main`. See [`.github/workflows/test.yml`](.github/workflows/test.yml).
 
+## What is Tableau?
+
+**Tableau** is a leading data visualization and business intelligence (BI) platform that allows users to connect to data sources, create interactive dashboards, and share insights — all without writing code.
+
+### Key Features
+
+| Feature | Description |
+|---------|-------------|
+| **Drag-and-drop interface** | Build charts, graphs, and dashboards visually |
+| **Wide data connectivity** | Connects to CSV, Excel, SQL databases, cloud services, and more |
+| **Interactive dashboards** | Filters, drill-downs, and tooltips for deep data exploration |
+| **Real-time analytics** | Live connections to streaming or updating data sources |
+| **Collaboration & sharing** | Publish dashboards to Tableau Server, Tableau Online, or Tableau Public |
+
+### Tableau vs. Python Visualization Libraries
+
+| Tool | Best For |
+|------|----------|
+| **Tableau** | Interactive dashboards, business users, non-coders, quick visual exploration |
+| **matplotlib / seaborn** | Static plots in notebooks and scripts |
+| **Plotly** | Interactive charts embedded in Python apps |
+| **Streamlit** | Quick Python-powered web apps with charts |
+
+### Relevance to This Project
+
+While this project uses **matplotlib**, **seaborn**, and **Streamlit** for visualizations, Tableau could be used as an alternative or complement to:
+
+- Visually explore the `student_data.csv` dataset with interactive filters
+- Build a dashboard showing Pass/Fail distributions by study hours, attendance, and previous results
+- Share findings with stakeholders who prefer a point-and-click interface over code
+
+To use Tableau with this project:
+1. Download [Tableau Public](https://public.tableau.com/) (free) or [Tableau Desktop](https://www.tableau.com/)
+2. Connect to `student_data.csv` via **Data → Connect → Text File**
+3. Drag `StudyHours`, `Attendance`, and `PassFail` fields onto the canvas to explore patterns
+
 ## Future Improvements
 
 - Collect real student data to replace the synthetic dataset
